@@ -8,6 +8,10 @@
     margin: 0 auto;
 }
 
+.site-container {
+    max-width: $breakpoint-lg;
+}
+
 // Utilisation du css Layout Grid pour faire le wrapper
 .grid-wrapper {
     display: grid;

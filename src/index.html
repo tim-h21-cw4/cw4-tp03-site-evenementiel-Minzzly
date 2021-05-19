@@ -12,20 +12,23 @@
 
     <body>
         <div class="site-container">
-            <nav class="navPrincipale">
-                <img src="assets/images/logoSite.png" alt="" />
-                <ul>
-                    <li>Accueil</li>
-                    <li>Programmation</li>
-                    <li>Artistes</li>
-                    <li>Contact</li>
-                    <li class="CTA">Acheter</li>
-                </ul>
-                <div class="languePrincipale">
-                    <img src="assets/images/drapeauFrance.png" alt="drapeau de la France" />
-                    <p>FR</p>
-                </div>
-            </nav>
+            <header class="header">
+                <nav class="navPrincipale">
+                    <img src="assets/images/logoSite.png" alt="" />
+                    <ul>
+                        <li>Accueil</li>
+                        <li>Programmation</li>
+                        <li>Artistes</li>
+                        <li>Contact</li>
+                        <li class="CTA">Acheter</li>
+                    </ul>
+                    <div class="languePrincipale">
+                        <img src="assets/images/drapeauFrance.png" alt="drapeau de la France" />
+                        <p>FR</p>
+                    </div>
+                </nav>
+            </header>
+
             <div class="hero">
                 <h1>Musiccon</h1>
                 <p class="dateEtLieu">9-11 juillet au <span class="emphaseLieu">Palais des Congrès</span></p>
@@ -33,8 +36,247 @@
             </div>
 
             <section class="video">
-                <h2>Un peu sur Musiccon</h2>
+                <h2>Un peu sur Musiccon...</h2>
+                <!-- Video ici!!! -->
             </section>
+            <section class="artistesEnVedettes">
+                <h2>Artistes en vedettes</h2>
+                <div class="swiper-container" data-component="Carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-content">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-1.png" alt="Un artiste" />
+                                <h3>Lacy Hobbs</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-content">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-2.png" alt="Un artiste" />
+                                <h3>Cathy Ponce</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-secondary">
+                            <div class="swiper-slide-content">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-3.png" alt="Un artiste" />
+                                <h3>Jem Vincent</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-secondary">
+                            <div class="swiper-slide-content">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-4.png" alt="Un artiste" />
+                                <h3>Jovan Khan</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-secondary">
+                            <div class="swiper-slide-content">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-5.png" alt="Un artiste" />
+                                <h3>Samuel Wood</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-secondary">
+                            <div class="swiper-slide-content">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-6.png" alt="Un artiste" />
+                                <h3>Jack Daniel</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-secondary">
+                            <div class="swiper-slide-content">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-7.png" alt="Un artiste" />
+                                <h3>Bobby Jackson</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-secondary">
+                            <div class="swiper-slide-content">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-8.png" alt="Un artiste" />
+                                <h3>Logan Reeve</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-secondary">
+                            <div class="swiper-slide-content">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes.png" alt="Un artiste" />
+                                <h3>Mike Woodley</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="informationMusiccon">
+                <div class="dateDepuis">
+                    <p>Depuis <span class="emphase emphaseDateDepuis">2001</span></p>
+                </div>
+                <div class="joursSatis">
+                    <p><span class="emphase emphaseJoursSatis">3</span> jours satisfaisants</p>
+                </div>
+                <div class="nombreParticipants">
+                    <p>Plus de <span class="emphase emphaseParticipants">60 000</span> participants</p>
+                </div>
+                <div class="differentsArtistes">
+                    <p><span class="emphase emphaseArtistes">30</span> différents artistes</p>
+                </div>
+            </section>
+
+            <section class="forfait">
+                <h2>Nos forfaits</h2>
+                <div class="swiper-container" data-component="Carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-content">
+                                <h3>Bronze</h3>
+                                <p class="descriptionForfait">
+                                    Une passe d’une journée pour découvrir l’évennement. Ce type de billet offre tous
+                                    les activités disponible, mais limite les artistes que vous pouvez voirs. C’est donc
+                                    parfait pour ceux qui sont à l’évennement seulement pour les marchandises.
+                                </p>
+                                <p class="prixForfait">31.99$</p>
+                                <button class="boutonForfait"><a href="">Acheter</a></button>
+                            </div>
+
+                            <div class="swiper-slide-content">
+                                <h3>Argent</h3>
+                                <p class="descriptionForfait">
+                                    Vous avez accès à tous les jours de l’évennement, à tous les activités et à tous les
+                                    artistes. Si vous êtes des fanatiques de la musiques et que cette année il y a des
+                                    artistes que vous voulez rencontrer, ce billets est l’idéal pour vous.
+                                </p>
+                                <p class="prixForfait">55.99$</p>
+                                <button class="boutonForfait"><a href="">Acheter</a></button>
+                            </div>
+
+                            <div class="swiper-slide-content">
+                                <h3>Or</h3>
+                                <p class="descriptionForfait">
+                                    Ce billlet est seulement pour ceux qui veulent prendre les rencontres avec les
+                                    musiciens à un autre niveau. Vous aurez le droit d’aller dans une chambre privé avec
+                                    eux (avec réservation). Dépêcher-vous, car les disponibilité vont partir rapidement!
+                                </p>
+                                <p class="prixForfait">145.99$</p>
+                                <button class="bouton boutonForfait"><a href="">Acheter</a></button>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sectionCarte">
+                <h2>Où sommes nous?</h2>
+                <div class="informationCarte">
+                    <h3>Palais des Congrès</h3>
+                    <div class="carte">
+                        <img src="assets/images/carte.png" alt="image d'une carte" />
+                        <img src="assets/icons/iconeCarteRose.svg" alt="Icone pour la carte" />
+                        <h4>Entrée 1</h4>
+                        <button class="boutton">Prochain</button>
+                    </div>
+                    <div class="adresseMusiccon">
+                        <img src="assets/icons/iconeCarteNoir.svg" alt="Icone pour la carte" />
+                        <p>
+                            1001 Jean Paul Riopelle P1 <br />
+                            Montréal, QC H2Z 1H5
+                        </p>
+                    </div>
+
+                    <div class="horraireMusiccon">
+                        <img src="assets/icons/iconeCarteNoir.svg" alt="Icone pour la carte" />
+
+                        <div class="swiper-container" data-component="Carousel">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <!-- Oui j'ai commencer par lundi -->
+                                    <div class="swiper-slide-content">
+                                        <p class="jourSemaine">Lundi</p>
+                                        <p class="heureHoraire">5:30 - 0:00</p>
+                                    </div>
+                                    <div class="swiper-slide-content">
+                                        <p class="jourSemaine">Mardi</p>
+                                        <p class="heureHoraire">5:30 - 0:00</p>
+                                    </div>
+                                    <div class="swiper-slide-content">
+                                        <p class="jourSemaine">Mercredi</p>
+                                        <p class="heureHoraire">5:30 - 0:00</p>
+                                    </div>
+                                    <div class="swiper-slide-content">
+                                        <p class="jourSemaine">Jeudi</p>
+                                        <p class="heureHoraire">5:30 - 0:00</p>
+                                    </div>
+                                    <div class="swiper-slide-content">
+                                        <p class="jourSemaine">Vendredi</p>
+                                        <p class="heureHoraire">5:30 - 0:00</p>
+                                    </div>
+                                    <div class="swiper-slide-content">
+                                        <p class="jourSemaine">Samedi</p>
+                                        <p class="heureHoraire">5:30 - 0:00</p>
+                                    </div>
+                                    <div class="swiper-slide-content">
+                                        <p class="jourSemaine">Dimanche</p>
+                                        <p class="heureHoraire">5:30 - 0:00</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <div class="numeroMusicon">
+                            <img src="assets/icons/telephone.svg" alt="Icone pour telephone" />
+                            <p>+1(514)-871-8122</p>
+                        </div>
+
+                        <div class="siteMusiccon">
+                            <img src="assets/icons/monde.svg" alt="Icone pour telephone" />
+                            <p><a href="https://congresmtl.com/en/">congresmtl.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="informationMusiccon">
+                <h2>Nos Partenaire</h2>
+                <img src="assets/images/partenaire/LogoDastache 1.png" alt="Logo Dastache" />
+                <img src="assets/images/partenaire/LogoGameHub 1.png" alt="Logo GameHub" />
+                <img src="assets/images/partenaire/LogoNeverLine 1.png" alt="Logo NeverLine" />
+                <img src="assets/images/partenaire/LogoRuby 1.png" alt="Logo Ruby" />
+                <img src="assets/images/partenaire/LogoSpaceDistortions 1.png" alt="Logo Space Distortions" />
+            </section>
+
+            <footer class="footer">
+                <div class="clickMoi">
+                    <p>Clickez moi</p>
+                    <img src="assets/icons/fleche.svg" alt="icone de fleche telephone" />
+                </div>
+                <div class="ligneSeparation"></div>
+                <div class="infoFooter">
+                    <div class="media">
+                        <img src="assets/icons/medias1.svg" alt="" />
+                        <img src="assets/icons/medias2.svg" alt="" />
+                        <img src="assets/icons/medias3.svg" alt="" />
+                        <img src="assets/icons/medias4.svg" alt="" />
+                    </div>
+                    <div class="texteFooter">
+                        <p>Termes et conditions</p>
+                        <p>Politique de confidentialité</p>
+                        <p>FAQ</p>
+                    </div>
+                </div>
+                <img
+                    src="assets/icons/flecheRemonter.svg"
+                    alt="fleche pour remonter en haut du site"
+                    class="flecheHaut"
+                />
+                <div class="copyright">
+                    <p>LangloisAudrey Ⓒ Tous droits réservés</p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Retour sur le tp1</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="site-container">
+            <header class="header">
+                <nav class="navPrincipale">
+                    <img src="assets/images/logoSite.png" alt="" />
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="pageProgrammation.html">Programmation</a></li>
+                        <li>Artistes</li>
+                        <li><a href="pageContact.html">Contact</a></li>
+                        <li class="CTA">Acheter</li>
+                    </ul>
+                    <div class="languePrincipale">
+                        <img src="assets/images/drapeauFrance.png" alt="drapeau de la France" />
+                        <p>FR</p>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="petition">
+                <div class="petition__content wrapper">
+                    <h1>Les amis de la forêt</h1>
+                    <p>
+                        Sauver 10 % de la forêt boréale canadienne, la plus grande jungle nordique encore intouchée,
+                        n'est pas plus acceptable que si on limitait à 10 % la protection de l'Amazonie contre la
+                        déforestation.
+                    </p>
+                    <p>Il faut prendre action dès maintenant. Aidez-nous!</p>
+
+                    <form action="" class="form" autocomplete="off" data-component="Form">
+                        <div class="form__body">
+                            <fieldset class="grid">
+                                <div class="input">
+                                    <label class="input__label" for="name"> Votre nom</label>
+                                    <input
+                                        class="input__element"
+                                        type="text"
+                                        name="fullname"
+                                        id="name"
+                                        placeholder="ex.: Jean-François"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="input">
+                                    <label class="input__label" for="email"> Courriel </label>
+                                    <input
+                                        class="input__element"
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="ex.: exemple@exemple.com"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="input">
+                                    <label class="input__label" for="phone"> Téléphone </label>
+                                    <input
+                                        class="input__element"
+                                        type="tel"
+                                        name="phone"
+                                        id="phone"
+                                        placeholder="(555) 666-7777"
+                                        pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="input select">
+                                    <label class="input__label" for="province"> Province </label>
+                                    <select name="" id="province" class="input__element" required>
+                                        <option value="" hidden>Choisir une province</option>
+                                        <option value="qc">Québec</option>
+                                        <option value="on">Ontario</option>
+                                        <option value="al">Alberta</option>
+                                    </select>
+                                </div>
+                                <div class="input textarea u-grid-fullwidth">
+                                    <label class="input__label" for="comment"> Commentaire </label>
+                                    <textarea class="input__element" name="comment" id="comment" required></textarea>
+                                </div>
+
+                                <div class="input checkbox">
+                                    <input
+                                        class="input__element"
+                                        type="checkbox"
+                                        name="optin[]"
+                                        id="optin"
+                                        value="true"
+                                    />
+                                    <label class="input__label" for="optin">
+                                        Je veux être informé des prochaines actions...
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <h2>Les essences</h2>
+                                <p>Les arbres que tu aimerais sauver le plus?</p>
+                                <div class="form__list" data-input-container>
+                                    <div class="input radio">
+                                        <input
+                                            class="input__element"
+                                            type="radio"
+                                            name="tree[]"
+                                            id="tree1"
+                                            value="sapin beaumier"
+                                            required
+                                        />
+                                        <label class="input__label" for="tree1"> Le sapin beaumier </label>
+                                    </div>
+
+                                    <div class="input radio">
+                                        <input
+                                            class="input__element"
+                                            type="radio"
+                                            name="tree[]"
+                                            id="tree2"
+                                            value="epinette noire"
+                                            required
+                                        />
+                                        <label class="input__label" for="tree2"> L'epinette noire </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <footer class="form__footer">
+                                <button class="button">Joindre les rangs</button>
+                            </footer>
+                        </div>
+                        <div class="form__confirmation">
+                            <h2>Merci</h2>
+                            <p>Votre formulaire a bien été envoyé!</p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="clickMoi">
+                    <p>Clickez moi</p>
+                    <img src="assets/icons/fleche.svg" alt="icone de fleche telephone" />
+                </div>
+                <div class="ligneSeparation"></div>
+                <div class="infoFooter">
+                    <div class="media">
+                        <img src="assets/icons/medias1.svg" alt="" />
+                        <img src="assets/icons/medias2.svg" alt="" />
+                        <img src="assets/icons/medias3.svg" alt="" />
+                        <img src="assets/icons/medias4.svg" alt="" />
+                    </div>
+                    <div class="texteFooter">
+                        <p>Termes et conditions</p>
+                        <p>Politique de confidentialité</p>
+                        <p>FAQ</p>
+                    </div>
+                </div>
+                <img
+                    src="assets/icons/flecheRemonter.svg"
+                    alt="fleche pour remonter en haut du site"
+                    class="flecheHaut"
+                />
+                <div class="copyright">
+                    <p>LangloisAudrey Ⓒ Tous droits réservés</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

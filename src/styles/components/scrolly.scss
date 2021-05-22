@@ -1,0 +1,50 @@
+.informationMusiccon {
+    .joursSatis {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .differentsArtistes {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    p {
+        font-size: var(--font-size-h4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .emphase {
+            font-size: var(--font-size-h3);
+            color: var(--color-primary);
+            padding: 0 var(--spacing-xs);
+        }
+
+        &.scrollyDate {
+            background-image: url(../../assets/images/scrollytelling/pattern1.png);
+            background-repeat: no-repeat;
+            height: 427px;
+            width: 467px;
+        }
+
+        &.scrollyJours {
+            background-image: url(../../assets/images/scrollytelling/pattern2.png);
+            background-repeat: no-repeat;
+            height: 434px;
+            width: 482px;
+        }
+
+        &.scrollyParticipants {
+            background-image: url(../../assets/images/scrollytelling/pattern3.png);
+            background-repeat: no-repeat;
+            height: 397px;
+            width: 681px;
+        }
+
+        &.scrollyArtistes {
+            background-image: url(../../assets/images/scrollytelling/pattern4.png);
+            background-repeat: no-repeat;
+            height: 432px;
+            width: 420px;
+        }
+    }
+}

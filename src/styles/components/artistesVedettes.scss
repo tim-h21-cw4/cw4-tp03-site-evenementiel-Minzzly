@@ -1,0 +1,36 @@
+.artistesEnVedettes {
+    background-image: url(../../assets/images/backgroundSite2.png);
+    background-repeat: repeat-y;
+    h2 {
+        margin-bottom: var(--spacing-xl);
+        padding-top: var(--spacing-md);
+    }
+
+    .swiper-wrapper {
+        margin-bottom: var(--spacing-lg);
+        img {
+            display: block;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+
+        .nomArtiste {
+            background-color: var(--color-white);
+            margin: 0;
+            padding: var(--spacing-sm);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: var(--spacing-xl);
+        }
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background-color: var(--color-primary);
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import ComponentFactory from './ComponentFactory';
+import Icons from './utils/Icons';
 
 class Main {
   constructor() {
@@ -7,6 +8,9 @@ class Main {
 
   init() {
     document.documentElement.classList.add('has-js');
+
+    //Charge le sprite svg
+    Icons.load();
 
     new ComponentFactory();
   }

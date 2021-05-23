@@ -30,15 +30,20 @@ export default class Carousel {
 
     // Gestion des paramètres différents lorsqu'on veut avoir
     // 2 slides visibles sur grand écran et une seule sur petit écran
-    if (this.element.dataset.carousel == 'split') {
+    if (this.element.dataset.carousel == 'coverflow') {
       options = {
         ...this.defaultOptions,
         ...{
-          slidesPerView: 1,
+          slidesPerView: 3,
+          effect: 'coverflow',
           breakpoints: {
             768: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             },
+          },
+          coverflowEffect: {
+            rotate: 10,
+            slideShadows: false,
           },
         },
       };

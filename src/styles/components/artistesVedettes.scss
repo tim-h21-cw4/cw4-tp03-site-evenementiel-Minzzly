@@ -27,10 +27,10 @@
             height: var(--spacing-xl);
         }
     }
+}
 
-    .swiper-pagination {
-        .swiper-pagination-bullet {
-            background-color: var(--color-primary);
-        }
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        background-color: var(--color-primary);
     }
 }

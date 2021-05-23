@@ -1,0 +1,37 @@
+footer {
+    background-color: var(--color-white);
+    .contenuFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+        .clickMoi {
+            display: flex;
+            flex-direction: column;
+            p {
+                margin: 0;
+            }
+        }
+
+        .ligneSeparation {
+            background-color: var(--color-black);
+            width: 2px;
+            height: 150px;
+        }
+
+        .icon {
+            fill: black;
+        }
+    }
+
+    .copyright {
+        background-color: var(--color-primary);
+        p {
+            margin: 0;
+            padding: var(--spacing-xs);
+
+            font-family: var(--font-secondary);
+            font-weight: 700;
+        }
+    }
+}

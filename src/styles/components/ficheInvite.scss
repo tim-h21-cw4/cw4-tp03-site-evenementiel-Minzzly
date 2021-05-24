@@ -1,0 +1,66 @@
+.sectionArtiste {
+    background-image: url(../../assets/images/BackgroundFicheArtiste.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    position: relative;
+
+    .infoFicheArtiste {
+        display: flex;
+        flex-direction: column;
+        margin-top: -15%;
+        padding: var(--spacing-xl) 200px var(--spacing-lg) 200px;
+
+        h2 {
+            font-family: var(--font-tertiary);
+        }
+        .soustitreBio {
+            margin: 0;
+            padding-top: var(--spacing-md);
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+
+        .mediasSociaux {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: var(--spacing-md);
+            .media {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 15%;
+            }
+        }
+    }
+}
+
+.evenementsArtiste {
+    background-image: url(../../assets/images/backgroundSite2.png);
+    margin: var(--spacing-md) auto;
+
+    display: flex;
+    justify-content: space-around;
+
+    .evenement {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 var(--spacing-xl);
+        p {
+            margin: 0;
+        }
+
+        .nomDeEvenement {
+            font-weight: 700;
+        }
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}

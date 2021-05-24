@@ -14,17 +14,18 @@
         <div class="site-container">
             <header class="header">
                 <nav class="navPrincipale">
-                    <img src="assets/images/logoSite.png" alt="" />
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="pageProgrammation.html">Programmation</a></li>
-                        <li>Artistes</li>
-                        <li><a href="pageContact.html">Contact</a></li>
-                        <li class="CTA">Acheter</li>
-                    </ul>
-                    <div class="languePrincipale">
-                        <img src="assets/images/drapeauFrance.png" alt="drapeau de la France" />
-                        <p>FR</p>
+                    <div class="wrapper">
+                        <a href="index.html"><img src="assets/images/logoSite.png" alt="" /></a>
+                        <ul>
+                            <li><a href="pageProgrammation.html">Programmation</a></li>
+                            <li><a href="">Artistes</a></li>
+                            <li><a href="pageContact.html">Contact</a></li>
+                            <li class="CTA"><a href="">Acheter</a></li>
+                        </ul>
+                        <div class="languePrincipale">
+                            <img src="assets/images/drapeauFrance.png" alt="drapeau de la France" />
+                            <p>FR</p>
+                        </div>
                     </div>
                 </nav>
 
@@ -43,13 +44,16 @@
                     <nav class="mobileModal">
                         <div class="wrapper">
                             <ul>
-                                <li><a href="index.html">Accueil</a></li>
                                 <li><a href="pageProgrammation.html">Programmation</a></li>
                                 <li><a href="">Artistes</a></li>
                                 <li><a href="pageContact.html">Contact</a></li>
                                 <li class="CTA"><a href="">Acheter</a></li>
                             </ul>
-                            <button>Acheter</button>
+
+                            <div class="languePrincipale">
+                                <img src="assets/images/drapeauFrance.png" alt="drapeau de la France" />
+                                <p>FR</p>
+                            </div>
                         </div>
                     </nav>
                 </nav>
@@ -112,31 +116,46 @@
             </div>
 
             <footer class="footer">
-                <div class="clickMoi">
-                    <p>Clickez moi</p>
-                    <img src="assets/icons/fleche.svg" alt="icone de fleche telephone" />
-                </div>
-                <div class="ligneSeparation"></div>
-                <div class="infoFooter">
-                    <div class="media">
-                        <img src="assets/icons/medias1.svg" alt="" />
-                        <img src="assets/icons/medias2.svg" alt="" />
-                        <img src="assets/icons/medias3.svg" alt="" />
-                        <img src="assets/icons/medias4.svg" alt="" />
+                <div class="contenuFooter wrapper">
+                    <div class="clickMoi">
+                        <p>Clickez moi</p>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-flechetel"></use>
+                        </svg>
                     </div>
-                    <div class="texteFooter">
-                        <p>Termes et conditions</p>
-                        <p>Politique de confidentialité</p>
-                        <p>FAQ</p>
+                    <div class="ligneSeparation"></div>
+                    <div class="infoFooter">
+                        <div class="media">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-linkedin"></use>
+                            </svg>
+                        </div>
+                        <div class="texteFooter">
+                            <p>Termes et conditions</p>
+                            <p>Politique de confidentialité</p>
+                            <p>FAQ</p>
+                        </div>
                     </div>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-flecheRemonter"></use>
+                    </svg>
                 </div>
-                <img
-                    src="assets/icons/flecheRemonter.svg"
-                    alt="fleche pour remonter en haut du site"
-                    class="flecheHaut"
-                />
                 <div class="copyright">
-                    <p>LangloisAudrey Ⓒ Tous droits réservés</p>
+                    <div class="wrapper">
+                        <p>LangloisAudrey Ⓒ Tous droits réservés</p>
+                    </div>
                 </div>
             </footer>
         </div>

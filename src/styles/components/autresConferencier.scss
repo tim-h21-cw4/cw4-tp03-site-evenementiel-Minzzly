@@ -1,0 +1,28 @@
+.sectionTousArtistes {
+    margin-top: var(--spacing-lg);
+    background-image: url(../../assets/images/backgroundSite2.png);
+    background-repeat: repeat-y;
+    h2 {
+        padding: var(--spacing-md) 0;
+        font-family: var(--font-tertiary);
+    }
+    .swiper-slide {
+        background-color: var(--color-white);
+        margin-bottom: var(--spacing-lg);
+        .artistes-contenu {
+            padding: var(--spacing-xs) var(--spacing-sm);
+            h3 {
+                font-family: var(--font-tertiary);
+                font-size: var(--font-size-h4);
+            }
+
+            .dateEtSalle {
+                font-weight: 700;
+                margin: 0;
+            }
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}

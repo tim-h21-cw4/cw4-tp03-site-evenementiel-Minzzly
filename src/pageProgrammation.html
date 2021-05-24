@@ -14,17 +14,18 @@
         <div class="site-container">
             <header class="header">
                 <nav class="navPrincipale">
-                    <img src="assets/images/logoSite.png" alt="" />
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="pageProgrammation.html">Programmation</a></li>
-                        <li>Artistes</li>
-                        <li><a href="pageContact.html">Contact</a></li>
-                        <li class="CTA">Acheter</li>
-                    </ul>
-                    <div class="languePrincipale">
-                        <img src="assets/images/drapeauFrance.png" alt="drapeau de la France" />
-                        <p>FR</p>
+                    <div class="wrapper">
+                        <a href="index.html"><img src="assets/images/logoSite.png" alt="" /></a>
+                        <ul>
+                            <li><a href="pageProgrammation.html">Programmation</a></li>
+                            <li><a href="">Artistes</a></li>
+                            <li><a href="pageContact.html">Contact</a></li>
+                            <li class="CTA"><a href="">Acheter</a></li>
+                        </ul>
+                        <div class="languePrincipale">
+                            <img src="assets/images/drapeauFrance.png" alt="drapeau de la France" />
+                            <p>FR</p>
+                        </div>
                     </div>
                 </nav>
 
@@ -43,230 +44,284 @@
                     <nav class="mobileModal">
                         <div class="wrapper">
                             <ul>
-                                <li><a href="index.html">Accueil</a></li>
                                 <li><a href="pageProgrammation.html">Programmation</a></li>
                                 <li><a href="">Artistes</a></li>
                                 <li><a href="pageContact.html">Contact</a></li>
                                 <li class="CTA"><a href="">Acheter</a></li>
                             </ul>
-                            <button>Acheter</button>
+
+                            <div class="languePrincipale">
+                                <img src="assets/images/drapeauFrance.png" alt="drapeau de la France" />
+                                <p>FR</p>
+                            </div>
                         </div>
                     </nav>
                 </nav>
             </header>
 
-            <h1>Les programmes</h1>
+            <h2 class="titre-calendrier">Les programmes</h2>
 
-            <section class="sectionCalendrier">
+            <section class="sectionCalendrier wrapper">
                 <h2>Calendrier</h2>
                 <article class="calendrier">
                     <div class="conference">
                         <img src="assets/images/calendrier/PianoFrenzy.png" alt="" />
-                        <h3>Piano Frenzy</h3>
-                        <p class="salle">Salle A à 11h</p>
-                        <p>Si vous avez toujours voulu apprendre un peu le piano mais ne...</p>
+                        <div class="conference__contenu">
+                            <h3>Piano Frenzy</h3>
+                            <p class="salle">Salle A à 11h</p>
+                            <p>Si vous avez toujours voulu apprendre un peu le piano mais ne...</p>
+                        </div>
                     </div>
                     <div class="conference">
                         <img src="assets/images/calendrier/EpiqueGuitare.png" alt="" />
-                        <h3>Épique Guitare</h3>
-                        <p class="salle">Salle A à 12h30</p>
-                        <p>Ici, sont des cours de guitare donnés par ces Artistes çi: ...</p>
+                        <div class="conference__contenu">
+                            <h3>Épique Guitare</h3>
+                            <p class="salle">Salle A à 12h30</p>
+                            <p>Ici, sont des cours de guitare donnés par ces Artistes çi: ...</p>
+                        </div>
                     </div>
                     <div class="conference">
                         <img src="assets/images/calendrier/ViolonViolent.png" alt="" />
-                        <h3>Violon violent</h3>
-                        <p class="salle">Salle A à 14h</p>
-                        <p>C’est le temps d’apprendre un instrument à ...</p>
+                        <div class="conference__contenu">
+                            <h3>Violon violent</h3>
+                            <p class="salle">Salle A à 14h</p>
+                            <p>C’est le temps d’apprendre un instrument à ...</p>
+                        </div>
                     </div>
                     <div class="conference">
                         <img src="assets/images/calendrier/FaitDuVent.png" alt="" />
-                        <h3>Fait du vent</h3>
-                        <p class="salle">Salle A à 15h30</p>
-                        <p>Les flûtes, les trompettes, les clarinettes, tous...</p>
+                        <div class="conference__contenu">
+                            <h3>Fait du vent</h3>
+                            <p class="salle">Salle A à 15h30</p>
+                            <p>Les flûtes, les trompettes, les clarinettes, tous...</p>
+                        </div>
                     </div>
                     <div class="conference">
                         <img src="assets/images/calendrier/Composition.png" alt="" />
-                        <h3>Composition</h3>
-                        <p class="salle">Salle A à 17h</p>
-                        <p>Des instruments n’est pas votre point for? Pas de probl...</p>
+                        <div class="conference__contenu">
+                            <h3>Composition</h3>
+                            <p class="salle">Salle A à 17h</p>
+                            <p>Des instruments n’est pas votre point for? Pas de probl...</p>
+                        </div>
                     </div>
                     <div class="conference">
                         <img src="assets/images/calendrier/LaVieDeMike.png" alt="" />
-                        <h3>La vie de Mike</h3>
-                        <p class="salle">Salle B à 11h</p>
-                        <p>Decouvrez la vie personnel de Mike Woodley et comm...</p>
+                        <div class="conference__contenu">
+                            <h3>La vie de Mike</h3>
+                            <p class="salle">Salle B à 11h</p>
+                            <p>Decouvrez la vie personnel de Mike Woodley et comm...</p>
+                        </div>
                     </div>
                     <div class="conference">
                         <img src="assets/images/calendrier/Commencer.png" alt="" />
-                        <h3>Commencer</h3>
-                        <p class="salle">Salle B à 12h30</p>
-                        <p>Si vous voulez devenir un musiciens, cette conférence vous...</p>
+                        <div class="conference__contenu">
+                            <h3>Commencer</h3>
+                            <p class="salle">Salle B à 12h30</p>
+                            <p>Si vous voulez devenir un musiciens, cette conférence vous...</p>
+                        </div>
                     </div>
                     <div class="conference">
                         <img src="assets/images/calendrier/LesJeuxVideos.png" alt="" />
-                        <h3>Les jeux vidéos</h3>
-                        <p class="salle">Salle B à 14h</p>
-                        <p>La musique qui joue dans le jeux compte bien sûr dans notre...</p>
+                        <div class="conference__contenu">
+                            <h3>Les jeux vidéos</h3>
+                            <p class="salle">Salle B à 14h</p>
+                            <p>La musique qui joue dans le jeux compte bien sûr dans notre...</p>
+                        </div>
                     </div>
                     <div class="conference">
                         <img src="assets/images/calendrier/EffetMusical.png" alt="" />
-                        <h3>L’effet musical</h3>
-                        <p class="salle">Salle B 15h30</p>
-                        <p>Tous les effets et les émotions que vous ressentez à cause de...</p>
+                        <div class="conference__contenu">
+                            <h3>L’effet musical</h3>
+                            <p class="salle">Salle B 15h30</p>
+                            <p>Tous les effets et les émotions que vous ressentez à cause de...</p>
+                        </div>
                     </div>
                     <div class="conference">
                         <img src="assets/images/calendrier/LeGenreParfait.png" alt="" />
-                        <h3>Le genre parfait</h3>
-                        <p class="salle">Salle B 17h</p>
-                        <p>Un débat où personne ne gagne. Içi c’est l’endroit de...</p>
+                        <div class="conference__contenu">
+                            <h3>Le genre parfait</h3>
+                            <p class="salle">Salle B 17h</p>
+                            <p>Un débat où personne ne gagne. Içi c’est l’endroit de...</p>
+                        </div>
                     </div>
                 </article>
             </section>
 
             <section class="sectionTousArtistes">
-                <h2>Tous les artistes</h2>
-                <div class="swiper-container" data-component="Carousel">
+                <h2 class="wrapper">Tous les artistes</h2>
+                <div class="swiper-container wrapper" data-component="Carousel">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="swiper-slide-content">
-                                <a href="ficheInvite.html">
-                                    <img src="assets/images/imgArtistes/ImgDesArtistes.png" alt="" />
+                            <a href="ficheInvite.html">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes.png" alt="" />
+                                <div class="artistes-contenu">
                                     <h3>Mike Woodley</h3>
                                     <p class="dateEtSalle">9 juillet de 11:00-12:30 Salle A</p>
                                     <p>
                                         Mike est un musicien américain. Depuis qu’il est tout petit qu’il rêve de
                                         devenir un artiste...
                                     </p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="swiper-slide-content">
-                                <a href="ficheInvite.html">
-                                    <img src="assets/images/imgArtistes/ImgDesArtistes-1.png" alt="" />
+                        <div class="swiper-slide">
+                            <a href="ficheInvite.html">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-1.png" alt="" />
+                                <div class="artistes-contenu">
                                     <h3>Lacy Hobbs</h3>
                                     <p class="dateEtSalle">9 juillet de 11:00-12:30 Salle A</p>
                                     <p>
                                         Mike est un musicien américain. Depuis qu’il est tout petit qu’il rêve de
                                         devenir un artiste...
                                     </p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="swiper-slide-content">
-                                <a href="ficheInvite.html">
-                                    <img src="assets/images/imgArtistes/ImgDesArtistes-2.png" alt="" />
+                        <div class="swiper-slide">
+                            <a href="ficheInvite.html">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-2.png" alt="" />
+                                <div class="artistes-contenu">
                                     <h3>Cathy Ponce</h3>
                                     <p class="dateEtSalle">9 juillet de 11:00-12:30 Salle A</p>
                                     <p>
                                         Mike est un musicien américain. Depuis qu’il est tout petit qu’il rêve de
                                         devenir un artiste...
                                     </p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="swiper-slide-content">
-                                <a href="ficheInvite.html">
-                                    <img src="assets/images/imgArtistes/ImgDesArtistes-3.png" alt="" />
+                        <div class="swiper-slide">
+                            <a href="ficheInvite.html">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-3.png" alt="" />
+                                <div class="artistes-contenu">
                                     <h3>Jem Vincent</h3>
                                     <p class="dateEtSalle">9 juillet de 11:00-12:30 Salle A</p>
                                     <p>
                                         Mike est un musicien américain. Depuis qu’il est tout petit qu’il rêve de
                                         devenir un artiste...
                                     </p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="swiper-slide-content">
-                                <a href="ficheInvite.html">
-                                    <img src="assets/images/imgArtistes/ImgDesArtistes-4.png" alt="" />
+                        <div class="swiper-slide">
+                            <a href="ficheInvite.html">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-4.png" alt="" />
+                                <div class="artistes-contenu">
                                     <h3>Jovan Khan</h3>
                                     <p class="dateEtSalle">9 juillet de 11:00-12:30 Salle A</p>
                                     <p>
                                         Mike est un musicien américain. Depuis qu’il est tout petit qu’il rêve de
                                         devenir un artiste...
                                     </p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="swiper-slide-content">
-                                <a href="ficheInvite.html">
-                                    <img src="assets/images/imgArtistes/ImgDesArtistes-5.png" alt="" />
+                        <div class="swiper-slide">
+                            <a href="ficheInvite.html">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-5.png" alt="" />
+                                <div class="artistes-contenu">
                                     <h3>Samuel Wood</h3>
                                     <p class="dateEtSalle">9 juillet de 11:00-12:30 Salle A</p>
                                     <p>
                                         Mike est un musicien américain. Depuis qu’il est tout petit qu’il rêve de
                                         devenir un artiste...
                                     </p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="swiper-slide-content">
-                                <a href="ficheInvite.html">
-                                    <img src="assets/images/imgArtistes/ImgDesArtistes-6.png" alt="" />
+                        <div class="swiper-slide">
+                            <a href="ficheInvite.html">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-6.png" alt="" />
+                                <div class="artistes-contenu">
                                     <h3>Jack Daniel</h3>
                                     <p class="dateEtSalle">9 juillet de 11:00-12:30 Salle A</p>
                                     <p>
                                         Mike est un musicien américain. Depuis qu’il est tout petit qu’il rêve de
                                         devenir un artiste...
                                     </p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="swiper-slide-content">
-                                <a href="ficheInvite.html">
-                                    <img src="assets/images/imgArtistes/ImgDesArtistes-7.png" alt="" />
+                        <div class="swiper-slide">
+                            <a href="ficheInvite.html">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-7.png" alt="" />
+                                <div class="artistes-contenu">
                                     <h3>Bobby Jackson</h3>
                                     <p class="dateEtSalle">9 juillet de 11:00-12:30 Salle A</p>
                                     <p>
                                         Mike est un musicien américain. Depuis qu’il est tout petit qu’il rêve de
                                         devenir un artiste...
                                     </p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="swiper-slide-content">
-                                <a href="ficheInvite.html">
-                                    <img src="assets/images/imgArtistes/ImgDesArtistes-8.png" alt="" />
+                        <div class="swiper-slide">
+                            <a href="ficheInvite.html">
+                                <img src="assets/images/imgArtistes/ImgDesArtistes-8.png" alt="" />
+                                <div class="artistes-contenu">
                                     <h3>Logan Reeve</h3>
                                     <p class="dateEtSalle">9 juillet de 11:00-12:30 Salle A</p>
                                     <p>
                                         Mike est un musicien américain. Depuis qu’il est tout petit qu’il rêve de
                                         devenir un artiste...
                                     </p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
             <footer class="footer">
-                <div class="clickMoi">
-                    <p>Clickez moi</p>
-                    <img src="assets/icons/fleche.svg" alt="icone de fleche telephone" />
-                </div>
-                <div class="ligneSeparation"></div>
-                <div class="infoFooter">
-                    <div class="media">
-                        <img src="assets/icons/medias1.svg" alt="" />
-                        <img src="assets/icons/medias2.svg" alt="" />
-                        <img src="assets/icons/medias3.svg" alt="" />
-                        <img src="assets/icons/medias4.svg" alt="" />
+                <div class="contenuFooter wrapper">
+                    <div class="clickMoi">
+                        <p>Clickez moi</p>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-flechetel"></use>
+                        </svg>
                     </div>
-                    <div class="texteFooter">
-                        <p>Termes et conditions</p>
-                        <p>Politique de confidentialité</p>
-                        <p>FAQ</p>
+                    <div class="ligneSeparation"></div>
+                    <div class="infoFooter">
+                        <div class="media">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-linkedin"></use>
+                            </svg>
+                        </div>
+                        <div class="texteFooter">
+                            <p>Termes et conditions</p>
+                            <p>Politique de confidentialité</p>
+                            <p>FAQ</p>
+                        </div>
                     </div>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-flecheRemonter"></use>
+                    </svg>
                 </div>
-                <img
-                    src="assets/icons/flecheRemonter.svg"
-                    alt="fleche pour remonter en haut du site"
-                    class="flecheHaut"
-                />
                 <div class="copyright">
-                    <p>LangloisAudrey Ⓒ Tous droits réservés</p>
+                    <div class="wrapper">
+                        <p>LangloisAudrey Ⓒ Tous droits réservés</p>
+                    </div>
                 </div>
             </footer>
         </div>

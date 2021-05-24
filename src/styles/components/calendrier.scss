@@ -1,0 +1,39 @@
+.titre-calendrier {
+    text-align: center;
+    padding: var(--spacing-md) 0;
+}
+.sectionCalendrier {
+    h2 {
+        font-family: var(--font-tertiary);
+        font-size: var(--font-size-h3);
+        padding: var(--spacing-sm) 0;
+    }
+    .calendrier {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .conference {
+            width: 20%;
+            background: var(--color-white);
+            img {
+                width: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .conference__contenu {
+                padding: var(--spacing-sm) var(--spacing-md);
+
+                h3 {
+                    font-family: var(--font-tertiary);
+                    font-size: 2rem;
+                }
+
+                .salle {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

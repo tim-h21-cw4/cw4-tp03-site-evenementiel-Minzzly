@@ -256,22 +256,54 @@
                 <div class="wrapper">
                     <h2>Nos Partenaires</h2>
                     <div class="partenaires">
-                        <img src="assets/images/partenaire/LogoDastache 1.png" alt="Logo Dastache" />
-                        <img src="assets/images/partenaire/LogoGameHub 1.png" alt="Logo GameHub" />
-                        <img src="assets/images/partenaire/LogoNeverLine 1.png" alt="Logo NeverLine" />
-                        <img src="assets/images/partenaire/LogoRuby 1.png" alt="Logo Ruby" />
-                        <img src="assets/images/partenaire/LogoSpaceDistortions 1.png" alt="Logo Space Distortions" />
+                        <img
+                            src="assets/images/partenaire/LogoDastache 1.png"
+                            alt="Logo Dastache"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-partenaires"
+                            data-modal-source="assets/images/partenaire/LogoDastache 1.png"
+                            data-modal-title="Dastache"
+                        />
+                        <img
+                            src="assets/images/partenaire/LogoGameHub 1.png"
+                            alt="Logo GameHub"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-partenaires"
+                            data-modal-source="assets/images/partenaire/LogoGameHub 1.png"
+                            data-modal-title="GameHub"
+                        />
+                        <img
+                            src="assets/images/partenaire/LogoNeverLine 1.png"
+                            alt="Logo NeverLine"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-partenaires"
+                            data-modal-source="assets/images/partenaire/LogoNeverLine 1.png"
+                            data-modal-title="NeverLine"
+                        />
+                        <img
+                            src="assets/images/partenaire/LogoRuby 1.png"
+                            alt="Logo Ruby"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-partenaires"
+                            data-modal-source="assets/images/partenaire/LogoRuby 1.png"
+                            data-modal-title="Ruby"
+                        />
+                        <img
+                            src="assets/images/partenaire/LogoSpaceDistortions 1.png"
+                            alt="Logo Space Distortions"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-partenaires"
+                            data-modal-source="assets/images/partenaire/LogoSpaceDistortions 1.png"
+                            data-modal-title="Space Distortions"
+                        />
                     </div>
                 </div>
             </section>
 
             <footer class="footer">
                 <div class="contenuFooter wrapper">
-                    <div class="clickMoi">
-                        <p>Clickez moi</p>
-                        <svg class="icon icon--lg">
-                            <use xlink:href="#icon-flechetel"></use>
-                        </svg>
+                    <div class="telephoneFooter">
+                        <img src="assets/images/telephone.png" alt="" />
                     </div>
                     <div class="ligneSeparation"></div>
                     <div class="infoFooter">
@@ -308,6 +340,19 @@
                     </div>
                 </div>
             </footer>
+
+            <template id="tpl-modal-partenaires">
+                <div class="modal">
+                    <div class="modal_scrim"></div>
+                    <div class="modal_box" id="contentModal">
+                        <div class="modal_content">
+                            <img src="{{source}}" alt="Image d'un logo" />
+                            <h2>{{title}}</h2>
+                        </div>
+                        <button class="modal__close js-close"></button>
+                    </div>
+                </div>
+            </template>
         </div>
     </body>
 </html>

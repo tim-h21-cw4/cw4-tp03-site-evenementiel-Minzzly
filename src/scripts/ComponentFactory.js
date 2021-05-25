@@ -3,6 +3,7 @@ import Form from './components/Form';
 import Header from './components/Header';
 import Video from './components/Video';
 import Scrolly from './components/Scrolly';
+import Modal from './components/Modal';
 
 export default class ComponentFactory {
   constructor() {
@@ -13,6 +14,7 @@ export default class ComponentFactory {
       Video,
       Header,
       Scrolly,
+      Modal,
     };
     this.init();
   }

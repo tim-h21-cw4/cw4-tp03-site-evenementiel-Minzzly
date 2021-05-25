@@ -10,12 +10,14 @@
         display: flex;
         justify-content: center;
         margin-bottom: var(--spacing-lg);
+
         .swiper-slide {
             background-color: var(--color-white);
             border-radius: 10px;
             border: var(--color-secondary) solid 1px;
             box-shadow: -6px 3px 0 var(--color-primary);
             text-align: center;
+            cursor: pointer;
 
             padding: var(--spacing-sm);
             p {
@@ -38,6 +40,26 @@
                 font-weight: 600;
                 font-size: var(--font-size-button);
             }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 60%;
+                height: 40% !important;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+
+                button,
+                .prixForfait {
+                    display: none;
+                }
+            }
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

@@ -11,11 +11,17 @@ export default class Carousel {
 
     // Options par défaut pour la librairie Swiper
     this.defaultOptions = {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 20,
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 4,
+          direction: 'horizontal',
+        },
       },
     };
 
@@ -35,10 +41,12 @@ export default class Carousel {
         ...this.defaultOptions,
         ...{
           slidesPerView: 3,
+          direction: 'vertical',
           effect: 'coverflow',
           breakpoints: {
             768: {
               slidesPerView: 3,
+              direction: 'horizontal',
             },
           },
           coverflowEffect: {

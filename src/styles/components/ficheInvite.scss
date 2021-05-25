@@ -11,6 +11,10 @@
         margin-top: -15%;
         padding: var(--spacing-xl) 200px var(--spacing-lg) 200px;
 
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: var(--spacing-xl) 100px var(--spacing-lg) 100px;
+        }
+
         h2 {
             font-family: var(--font-tertiary);
         }
@@ -28,6 +32,10 @@
             align-items: center;
             justify-content: space-evenly;
             margin-top: var(--spacing-md);
+
+            @media screen and (max-width: $breakpoint-sm) {
+                justify-content: space-between;
+            }
             .media {
                 display: flex;
                 align-items: center;
@@ -44,7 +52,6 @@
 
     display: flex;
     justify-content: space-around;
-
     .evenement {
         display: flex;
         flex-direction: column;
@@ -52,6 +59,10 @@
         align-items: center;
 
         padding: 0 var(--spacing-xl);
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: 0 var(--spacing-md);
+        }
+
         p {
             margin: 0;
         }

@@ -11,4 +11,8 @@ body {
     line-height: 1.6;
     background-image: url(../../assets/images/backgroundSite.png);
     background-repeat: repeat-y;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-content-responsive);
+    }
 }

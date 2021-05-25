@@ -7,9 +7,14 @@
         display: flex;
         justify-content: space-evenly;
         padding-bottom: var(--spacing-md);
+        flex-wrap: wrap;
     }
 
     img {
         cursor: pointer;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 20%;
+        }
     }
 }

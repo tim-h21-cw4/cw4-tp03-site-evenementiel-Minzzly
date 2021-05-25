@@ -37,6 +37,9 @@
         transform: scale(1);
         transition: transform 0.4s $ease-out-expo;
     }
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 50vh;
+    }
 }
 
 .modal_content {

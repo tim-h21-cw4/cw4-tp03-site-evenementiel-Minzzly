@@ -17,6 +17,10 @@
             width: 20%;
             background: var(--color-white);
             cursor: pointer;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 50%;
+            }
             img {
                 width: 100%;
                 object-fit: cover;

@@ -1,5 +1,6 @@
 import Carousel from './components/Carousel';
 import Form from './components/Form';
+import Video from './components/Video';
 
 export default class ComponentFactory {
   constructor() {
@@ -7,6 +8,7 @@ export default class ComponentFactory {
     this.componentList = {
       Carousel,
       Form,
+      Video,
     };
     this.init();
   }

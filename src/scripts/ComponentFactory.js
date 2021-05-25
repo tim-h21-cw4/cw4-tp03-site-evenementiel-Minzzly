@@ -1,10 +1,12 @@
 import Carousel from './components/Carousel';
+import Form from './components/Form';
 
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
       Carousel,
+      Form,
     };
     this.init();
   }

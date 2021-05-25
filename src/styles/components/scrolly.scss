@@ -48,3 +48,26 @@
         }
     }
 }
+
+.has-js {
+    [data-scrolly='FlipfromBottom'] {
+        opacity: 0;
+        transition: all 0.8s ease-out;
+        transform: rotateX(90deg);
+        &.is-active {
+            opacity: 1;
+            transform: rotateX(0deg);
+        }
+    }
+
+    [data-scrolly='FlipfromLeft'] {
+        opacity: 0;
+        transition: all 0.8s ease-out;
+        transform: rotateY(90deg);
+
+        &.is-active {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+    }
+}

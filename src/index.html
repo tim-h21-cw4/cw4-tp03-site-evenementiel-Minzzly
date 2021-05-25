@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <div class="site-container">
+        <div class="site-container" data-component="Scrolly">
             <header class="header" data-component="Header">
                 <nav class="navPrincipale">
                     <div class="wrapper">
@@ -59,14 +59,19 @@
                 </nav>
             </header>
 
-            <div class="heroAccueil">
+            <div class="heroAccueil" data-scrolly="FlipfromLeft">
                 <h1>Musiccon</h1>
                 <p class="dateEtLieu">9-11 juillet au <span class="emphaseLieu">Palais des Congrès</span></p>
                 <p class="slogan">Découvrez votre artiste!</p>
             </div>
 
             <section class="sectionVideo">
-                <div class="video video--full wrapper" data-component="Video" data-video-id="U7L-3VXAkSA">
+                <div
+                    class="video video--full wrapper"
+                    data-component="Video"
+                    data-video-id="U7L-3VXAkSA"
+                    data-scrolly="FlipfromBottom"
+                >
                     <div class="video__media js-video">
                         <img class="js-poster" src="assets/images/poster/poster1.png" alt="Spectacle de musique" />
                         <svg class="icon icon--xxl">
@@ -75,7 +80,7 @@
                     </div>
                 </div>
                 <div class="grid">
-                    <div class="video" data-component="Video" data-video-id="6gK84vwqxSk">
+                    <div class="video" data-component="Video" data-video-id="6gK84vwqxSk" data-scrolly="FlipfromBottom">
                         <div class="video__media js-video">
                             <img class="js-poster" src="assets/images/poster/poster2.jpg" alt="Spectacle de musique" />
                             <svg class="icon icon--xl">
@@ -83,7 +88,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="video" data-component="Video" data-video-id="VJx7Et20OI0">
+                    <div class="video" data-component="Video" data-video-id="VJx7Et20OI0" data-scrolly="FlipfromBottom">
                         <div class="video__media js-video">
                             <img class="js-poster" src="assets/images/poster/poster3.jpg" alt="Spectacle de musique" />
                             <svg class="icon icon--xl">
@@ -91,7 +96,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="video" data-component="Video" data-video-id="gykWYPrArbY">
+                    <div class="video" data-component="Video" data-video-id="gykWYPrArbY" data-scrolly="FlipfromBottom">
                         <div class="video__media js-video">
                             <img class="js-poster" src="assets/images/poster/poster4.jpg" alt="Spectacle de musique" />
                             <svg class="icon icon--xl">
@@ -99,7 +104,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="video" data-component="Video" data-video-id="rdpBZ5_b48g">
+                    <div class="video" data-component="Video" data-video-id="rdpBZ5_b48g" data-scrolly="FlipfromBottom">
                         <div class="video__media js-video">
                             <img class="js-poster" src="assets/images/poster/poster5.jpg" alt="Spectacle de musique" />
                             <svg class="icon icon--stroke icon--xl">
@@ -109,7 +114,7 @@
                     </div>
                 </div>
             </section>
-            <section class="artistesEnVedettes">
+            <section class="artistesEnVedettes" data-scrolly="FlipfromBottom">
                 <div class="wrapper">
                     <h2>Artistes en vedettes</h2>
                     <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
@@ -184,20 +189,20 @@
 
             <section class="informationMusiccon">
                 <div class="wrapper">
-                    <div class="dateDepuis">
+                    <div class="dateDepuis" data-scrolly="FlipfromLeft">
                         <p class="scrollyDate">Depuis <span class="emphase emphase--dateDepuis">2001</span></p>
                     </div>
-                    <div class="joursSatis">
+                    <div class="joursSatis" data-scrolly="FlipfromLeft">
                         <p class="scrollyJours">
                             <span class="emphase emphase--joursSatis">3</span> jours satisfaisants
                         </p>
                     </div>
-                    <div class="nombreParticipants">
+                    <div class="nombreParticipants" data-scrolly="FlipfromLeft">
                         <p class="scrollyParticipants">
                             Plus de <span class="emphase emphase--participants">60 000</span> participants
                         </p>
                     </div>
-                    <div class="differentsArtistes">
+                    <div class="differentsArtistes" data-scrolly="FlipfromLeft">
                         <p class="scrollyArtistes">
                             <span class="emphase emphase--artistes">30</span> différents artistes
                         </p>
@@ -205,7 +210,7 @@
                 </div>
             </section>
 
-            <section class="forfait">
+            <section class="forfait" data-scrolly="FlipfromBottom">
                 <div class="wrapper">
                     <h2>Nos forfaits</h2>
                     <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
@@ -247,79 +252,7 @@
                 </div>
             </section>
 
-            <!-- <section class="sectionCarte">
-                <div class="wrapper">
-                    <h2>Où sommes nous?</h2>
-                    <div class="informationCarte">
-                        <h3 class="nomEtablissement">Palais des Congrès</h3>
-                        <div class="carte">
-                            <img src="assets/images/carte.png" alt="image d'une carte" />
-                            <img src="assets/icons/iconeCarteRose.svg" alt="Icone pour la carte" />
-                            <h4>Entrée 1</h4>
-                            <button class="boutton">Prochain</button>
-                        </div>
-                        <div class="adresseMusiccon">
-                            <img src="assets/icons/iconeCarteNoir.svg" alt="Icone pour la carte" />
-                            <p>
-                                1001 Jean Paul Riopelle P1 <br />
-                                Montréal, QC H2Z 1H5
-                            </p>
-                        </div>
-
-                        <div class="horraireMusiccon">
-                            <img src="assets/icons/iconeCarteNoir.svg" alt="Icone pour la carte" />
-
-                            <div class="swiper-container" data-component="Carousel">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        
-                                        <div class="swiper-slide-content">
-                                            <p class="jourSemaine">Lundi</p>
-                                            <p class="heureHoraire">5:30 - 0:00</p>
-                                        </div>
-                                        <div class="swiper-slide-content">
-                                            <p class="jourSemaine">Mardi</p>
-                                            <p class="heureHoraire">5:30 - 0:00</p>
-                                        </div>
-                                        <div class="swiper-slide-content">
-                                            <p class="jourSemaine">Mercredi</p>
-                                            <p class="heureHoraire">5:30 - 0:00</p>
-                                        </div>
-                                        <div class="swiper-slide-content">
-                                            <p class="jourSemaine">Jeudi</p>
-                                            <p class="heureHoraire">5:30 - 0:00</p>
-                                        </div>
-                                        <div class="swiper-slide-content">
-                                            <p class="jourSemaine">Vendredi</p>
-                                            <p class="heureHoraire">5:30 - 0:00</p>
-                                        </div>
-                                        <div class="swiper-slide-content">
-                                            <p class="jourSemaine">Samedi</p>
-                                            <p class="heureHoraire">5:30 - 0:00</p>
-                                        </div>
-                                        <div class="swiper-slide-content">
-                                            <p class="jourSemaine">Dimanche</p>
-                                            <p class="heureHoraire">5:30 - 0:00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="numeroMusicon">
-                                <img src="assets/icons/telephone.svg" alt="Icone pour telephone" />
-                                <p>+1(514)-871-8122</p>
-                            </div>
-
-                            <div class="siteMusiccon">
-                                <img src="assets/icons/monde.svg" alt="Icone pour telephone" />
-                                <p><a href="https://congresmtl.com/en/">congresmtl.com</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <section class="sectionPartenaires">
+            <section class="sectionPartenaires" data-scrolly="FlipfromBottom">
                 <div class="wrapper">
                     <h2>Nos Partenaires</h2>
                     <div class="partenaires">

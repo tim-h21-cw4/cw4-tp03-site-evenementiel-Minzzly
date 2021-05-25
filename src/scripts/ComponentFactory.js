@@ -1,5 +1,6 @@
 import Carousel from './components/Carousel';
 import Form from './components/Form';
+import Header from './components/Header';
 import Video from './components/Video';
 
 export default class ComponentFactory {
@@ -9,6 +10,7 @@ export default class ComponentFactory {
       Carousel,
       Form,
       Video,
+      Header,
     };
     this.init();
   }

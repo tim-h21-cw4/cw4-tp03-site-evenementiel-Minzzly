@@ -12,7 +12,7 @@
 
     <body>
         <div class="site-container">
-            <header class="header">
+            <header class="header" data-component="Header">
                 <nav class="navPrincipale">
                     <div class="wrapper">
                         <a href="index.html"><img src="assets/images/logoSite.png" alt="" /></a>
@@ -34,7 +34,7 @@
                         <a href="index.html">
                             <img src="assets/images/logoSite.png" alt="Le logo du site" />
                         </a>
-                        <div class="menu-hamburger">
+                        <div class="menu-hamburger js-toggle">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -113,10 +113,9 @@
                                         required
                                     />
                                 </div>
-                            </fieldset>
-                            <fieldset>
-                                <p>Quel est votre sexe?</p>
-                                <div class="form__list" data-input-container>
+
+                                <div class="form__list data-input-container">
+                                    <label class="input__label" for="phone"> Quel est votre sexe? </label>
                                     <div class="input radio">
                                         <input
                                             class="input__element"
@@ -155,12 +154,14 @@
                                 </div>
                             </fieldset>
 
+                            <hr />
+
                             <fieldset class="grid">
                                 <div class="input select">
+                                    <br />
                                     <label class="input__label" for="journee">
                                         Quelle journée vous intéresse le plus?
                                     </label>
-                                    <br />
                                     <select name="" id="journee" class="input__element" required>
                                         <option value="" hidden>Choisir une journée</option>
                                         <option value="qc">9 juillet</option>
@@ -170,7 +171,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset>
+                            <fieldset class="form__list data-input-container">
                                 <label class="input__label" for="journee"> Quel est votre invité préféré? </label>
                                 <div class="form__list" data-input-container>
                                     <div class="input radio">
@@ -281,7 +282,9 @@
                                         <label class="input__label" for="invité9"> Mike Woodley </label>
                                     </div>
                                 </div>
+                            </fieldset>
 
+                            <fieldset class="grid">
                                 <div class="input textarea u-grid-fullwidth">
                                     <label class="input__label" for="comment"> Commentaire </label> <br />
                                     <textarea class="input__element" name="comment" id="comment" required></textarea>
@@ -298,7 +301,6 @@
                                     <label class="input__label" for="optin"> Je veux être abonné à l'infolettre </label>
                                 </div>
                             </fieldset>
-
                             <footer class="form__footer">
                                 <button class="button">Envoyer</button>
                             </footer>

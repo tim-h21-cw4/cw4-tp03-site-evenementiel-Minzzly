@@ -1,6 +1,11 @@
 .form {
     --input-radius: 3px;
     --input-padding: 1em;
+
+    hr {
+        background-color: var(--color-black);
+        height: 2px;
+    }
     fieldset {
         border: none;
         padding: 0;
@@ -10,6 +15,7 @@
         display: grid;
         gap: var(--spacing-md);
         grid-template-columns: 1fr;
+        margin: 0;
         @media screen and (min-width: $breakpoint-md) {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -18,11 +24,25 @@
     .form__footer {
         display: flex;
         justify-content: flex-end;
+        margin: var(--spacing-lg) 0;
+        background-color: transparent;
+
+        button {
+            background-color: var(--color-primary);
+            border: none;
+            border-radius: 5px;
+            color: var(--color-white);
+            padding: var(--spacing-xs) var(--spacing-sm);
+        }
     }
     .form__body {
         .is-sent & {
             display: none;
         }
+    }
+
+    .form__list {
+        margin-bottom: var(--spacing-md);
     }
 
     .form__confirmation {
@@ -98,6 +118,7 @@
 
     .select {
         position: relative;
+        margin-bottom: var(--spacing-md);
 
         .input__element {
             appearance: none;

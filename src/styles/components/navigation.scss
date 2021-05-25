@@ -1,9 +1,21 @@
 header {
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+
+    transition: all 0.4s $ease-out-expo;
+
+    .header-is-hidden.is-scrolling-down & {
+        transform: translateY(-100%) translateY(4px);
+    }
     /* ==========================================================================
      NAVIGATION (en générale)
      ========================================================================== */
     nav {
         background-color: var(--color-white);
+
         .wrapper {
             display: flex;
             justify-content: space-between;
@@ -50,6 +62,10 @@ header {
         @media screen and (max-width: $breakpoint-md) {
             display: none;
         }
+
+        .header-is-hidden.is-scrolling-down & {
+            background-color: var(--color-primary);
+        }
     }
 
     /* ==========================================================================
@@ -62,13 +78,17 @@ header {
         @media screen and (max-width: $breakpoint-md) {
             display: block;
         }
+
+        .header-is-hidden.is-scrolling-down & {
+            background-color: var(--color-primary);
+        }
     }
 
     .navMobile {
-        padding: var(--spacing-sm) 0;
         position: relative;
 
         .hamburgerEtLogo {
+            padding: var(--spacing-sm) 0;
             background-color: var(--color-white);
 
             display: flex;
@@ -77,6 +97,10 @@ header {
 
             position: relative;
             z-index: 2;
+
+            .header-is-hidden.is-scrolling-down & {
+                background-color: var(--color-primary);
+            }
         }
 
         .mobileModal {
@@ -108,7 +132,7 @@ header {
                 }
             }
 
-            &.open {
+            .nav-is-active & {
                 transform: translateY(0);
             }
         }
@@ -136,8 +160,10 @@ header {
                     transform-origin: left bottom;
                 }
             }
-            &.open {
+
+            .nav-is-active & {
                 span {
+                    top: calc(50% - var(--bar-height) / 2);
                     &:nth-child(1) {
                         transform: rotate(45deg);
                     }

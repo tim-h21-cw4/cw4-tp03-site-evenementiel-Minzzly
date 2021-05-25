@@ -4,6 +4,10 @@
     h2 {
         margin-bottom: var(--spacing-xl);
         padding-top: var(--spacing-md);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-bottom: var(--spacing-md);
+        }
     }
 
     .swiper-wrapper {

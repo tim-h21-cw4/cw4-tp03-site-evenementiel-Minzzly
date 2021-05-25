@@ -8,6 +8,9 @@
         font-size: var(--font-size-h3);
         padding: var(--spacing-sm) 0;
     }
+    @media screen and (max-width: $breakpoint-xs) {
+        display: none;
+    }
     .calendrier {
         display: flex;
         justify-content: space-between;
@@ -21,6 +24,7 @@
             @media screen and (max-width: $breakpoint-sm) {
                 width: 50%;
             }
+
             img {
                 width: 100%;
                 object-fit: cover;
@@ -38,6 +42,45 @@
                 .salle {
                     font-weight: 700;
                 }
+            }
+        }
+    }
+}
+
+.calendrierCarousel {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        display: block;
+    }
+
+    .conference {
+        width: 20%;
+        background: var(--color-white);
+        cursor: pointer;
+        margin: var(--spacing-md) 0;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 50%;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .conference__contenu {
+            padding: var(--spacing-sm) var(--spacing-md);
+            height: 200px;
+
+            h3 {
+                font-family: var(--font-tertiary);
+                font-size: 2rem;
+            }
+
+            .salle {
+                font-weight: 700;
             }
         }
     }

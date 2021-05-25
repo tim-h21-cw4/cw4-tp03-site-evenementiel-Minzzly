@@ -1,22 +1,36 @@
 footer {
     background-color: var(--color-white);
+
     .contenuFooter {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 200px;
+
+        @media screen and (max-width: $breakpoint-xs) {
+            padding: var(--spacing-xs);
+        }
+
         .telephoneFooter {
             display: flex;
             flex-direction: column;
             align-items: center;
             img {
                 width: 40%;
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    display: none;
+                }
             }
         }
 
         .media {
             .icon {
                 color: black;
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 20%;
+                }
             }
         }
     }
@@ -29,6 +43,10 @@ footer {
 
             font-family: var(--font-secondary);
             font-weight: 700;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                font-size: var(--font-size-content-mobile);
+            }
         }
     }
 }
@@ -37,4 +55,8 @@ footer {
     background-color: var(--color-black);
     width: 2px;
     height: 150px;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        display: none;
+    }
 }

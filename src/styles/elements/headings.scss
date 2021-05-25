@@ -19,12 +19,20 @@ h1 {
     @media screen and (max-width: $breakpoint-sm) {
         font-size: var(--font-size-h1-responsive);
     }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: var(--font-size-h1-mobile);
+    }
 }
 
 h2 {
     font-size: var(--font-size-h2);
     @media screen and (max-width: $breakpoint-sm) {
         font-size: var(--font-size-h2-responsive);
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: var(--font-size-h2-mobile);
     }
 }
 
@@ -34,6 +42,10 @@ h3 {
         font-family: var(--font-secondary);
         @media screen and (max-width: $breakpoint-sm) {
             font-size: var(--font-size-h3-responsive);
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            font-size: var(--font-size-h3-mobile);
         }
     }
 

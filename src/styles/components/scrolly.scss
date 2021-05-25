@@ -17,6 +17,10 @@
         @media screen and (max-width: $breakpoint-sm) {
             font-size: var(--font-size-h4-responsive);
         }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            font-size: var(--font-size-h4-mobile);
+        }
         .emphase {
             font-size: var(--font-size-h3);
             color: var(--color-primary);
@@ -24,39 +28,73 @@
             @media screen and (max-width: $breakpoint-sm) {
                 font-size: var(--font-size-h3-responsive);
             }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                font-size: var(--font-size-h3-mobile);
+            }
         }
 
         &.scrollyDate {
             background-image: url(../../assets/images/scrollytelling/pattern1.png);
             background-repeat: no-repeat;
+            background-size: auto;
             height: 427px;
             width: 467px;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                background-image: url(../../assets/images/scrollytelling/pattern1-mobile.png);
+
+                height: 184px;
+                width: 201px;
+            }
         }
 
         &.scrollyJours {
             background-image: url(../../assets/images/scrollytelling/pattern2.png);
             background-repeat: no-repeat;
+            background-size: auto;
             height: 434px;
             width: 482px;
 
-            @media screen and (max-width: $breakpoint-sm) {
-                height: 184;
-                width: 201;
+            @media screen and (max-width: $breakpoint-xs) {
+                background-image: url(../../assets/images/scrollytelling/pattern2-mobile.png);
+
+                height: 186px;
+                width: 207px;
             }
         }
 
         &.scrollyParticipants {
             background-image: url(../../assets/images/scrollytelling/pattern3.png);
             background-repeat: no-repeat;
+            background-size: auto;
             height: 397px;
             width: 681px;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                background-image: url(../../assets/images/scrollytelling/pattern3-mobile.png);
+
+                height: 171px;
+                width: 191px;
+
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         &.scrollyArtistes {
             background-image: url(../../assets/images/scrollytelling/pattern4.png);
             background-repeat: no-repeat;
+            background-size: auto;
             height: 432px;
             width: 420px;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                background-image: url(../../assets/images/scrollytelling/pattern4-mobile.png);
+
+                height: 185px;
+                width: 180px;
+            }
         }
     }
 }

@@ -55,6 +55,29 @@
                     display: none;
                 }
             }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                width: 80%;
+                height: 40% !important;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+
+                h3 {
+                    font-size: var(--font-size-h2-mobile);
+                }
+
+                p {
+                    font-size: var(--font-size-content-mobile);
+                }
+
+                button,
+                .prixForfait {
+                    display: none;
+                }
+            }
         }
         @media screen and (max-width: $breakpoint-sm) {
             display: flex;

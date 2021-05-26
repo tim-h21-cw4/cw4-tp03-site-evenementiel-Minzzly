@@ -1,3 +1,5 @@
+import Cache from '../utils/Cache';
+
 /** Composante Snackbar de TimTools */
 export default class Snackbar {
   /**
@@ -18,6 +20,7 @@ export default class Snackbar {
 
     this.hide = true;
     this.boutton = this.element.querySelector('.js-button'); //cherche le boutton pour fermer
+    this.id = this.element.dataset.id;
 
     this.snackbarDown();
   }
@@ -26,9 +29,9 @@ export default class Snackbar {
    * Méthode d'initialisation
    */
   init() {
+    this.checkCache();
     this.hide = false;
     this.html.classList.remove('snackbar-down');
-    console.log(this.hide);
 
     console.log('Nouvelle instance de la composante -> Snackbar');
     window.addEventListener('scroll', this.onScroll.bind(this));
@@ -41,6 +44,15 @@ export default class Snackbar {
     setTimeout(() => {
       this.init();
     }, this.snackDelay);
+  }
+
+  checkCache() {
+    const defaultTheme = Cache.get('snackbar');
+    if (defaultTheme) {
+      if (this.id == defaultTheme) {
+        this.element.style.display = 'none';
+      }
+    }
   }
 
   onScroll(event) {
@@ -67,5 +79,13 @@ export default class Snackbar {
 
   fermerSnackbar() {
     this.html.classList.add('snackbar-down');
+
+    this.hide = true;
+
+    if (this.id == null) {
+      this.id = '1';
+    }
+
+    Cache.set('snackbar', this.id, true);
   }
 }

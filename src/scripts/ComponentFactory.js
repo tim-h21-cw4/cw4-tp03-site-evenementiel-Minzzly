@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Video from './components/Video';
 import Scrolly from './components/Scrolly';
 import Modal from './components/Modal';
+import Snackbar from './components/Snackbar';
 
 export default class ComponentFactory {
   constructor() {
@@ -15,6 +16,7 @@ export default class ComponentFactory {
       Header,
       Scrolly,
       Modal,
+      Snackbar,
     };
     this.init();
   }

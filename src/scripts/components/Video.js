@@ -22,7 +22,6 @@ export default class Video {
   }
 
   static loadScript() {
-    console.log('marcheee');
     if (!Video.scriptIsLoading) {
       Video.scriptIsLoading = true;
       const script = document.createElement('script');

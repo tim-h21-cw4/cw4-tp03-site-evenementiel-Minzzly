@@ -4,6 +4,8 @@
     width: 100%;
     z-index: 11;
 
+    transition: all 0.4s $ease-out-expo;
+
     .wrapper {
         display: flex;
         align-items: center;
@@ -13,6 +15,10 @@
         border-radius: 10px 10px 0 0;
         padding: 0 var(--spacing-xl);
 
+        a {
+            text-decoration: underline;
+        }
+
         .icon {
             transition: all 0.4s $ease-out-expo;
             cursor: pointer;
@@ -20,5 +26,9 @@
                 transform: rotate(90deg);
             }
         }
+    }
+
+    .snackbar-down & {
+        transform: translateY(100%);
     }
 }

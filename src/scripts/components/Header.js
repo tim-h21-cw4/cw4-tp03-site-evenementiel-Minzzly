@@ -11,8 +11,6 @@ export default class Header {
   }
 
   init() {
-    console.log('Header engaged');
-
     window.addEventListener('scroll', this.onScroll.bind(this));
   }
 

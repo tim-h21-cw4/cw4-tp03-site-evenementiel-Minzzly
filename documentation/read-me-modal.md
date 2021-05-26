@@ -41,11 +41,7 @@ Quelques **classes** sont dans le html ou qui sont ajoutés avec du java-script 
 Avec la class `modal-is-active`, on peut animer la modal avec du _css_ avec des modifications et des transitions.
 
 ```css
-.modal_scrim {
-  opacity: 0;
-  transition: opacity 0.8s $ease-out-circ;
-  .modal-is-active & {
-    opacity: 0.8;
-  }
+.modal-is-active & {
+  opacity: 0.8;
 }
 ```

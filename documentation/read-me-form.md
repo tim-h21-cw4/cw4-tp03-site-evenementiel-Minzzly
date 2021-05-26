@@ -35,7 +35,7 @@ Voici les fonctions des méthodes appliqués dans le _java-script_:
 
 ### Où le mettre?
 
-> _Au début du form:._
+> _Au début du form:_
 
 ```html
 <form action="" class="form" autocomplete="off" data-component="Form">
